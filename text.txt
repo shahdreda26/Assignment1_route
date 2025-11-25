@@ -10,6 +10,11 @@
   
     Temporal Dead Zone : is block area {...} & variable  is inaccessible until computer initializes of variable
      start at the beginning of block end when computer completely initialization وتعتبر انسب حاجه ل let &const         
+    EX1: x=5
+     var x  -> undefined
+
+    EX2: y=7
+     let y  -> error 
 
 // Q3 
     == is compared between value
@@ -18,6 +23,14 @@
 // Q4 
    try (بحط فيها logic or function), handle error->catch (handle error if find)
    try-catch are block in async operations 
+   EX: 
+   try{
+       let result = 5 / 0
+       console.log(result)
+   }
+   catch{
+     console.log("divide by zero")
+   }
    try-catch are important : prevent crashes of app - code is readability and maintainability - enable error recovery 
 
 // Q5
