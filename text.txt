@@ -1,5 +1,5 @@
 // Q1
-    For each :بتتعامل مع ال array فقط , can make callback async ,مش بتقبل الbreak & continue & return
+    For each :بتتعامل مع ال array فقط  ,مش بتقبل الbreak & continue & return
     for of :بتتعامل مع function & object & array& set & map بتقبل break & continue & return
     for of is faster than for each
     
@@ -38,7 +38,7 @@
                convert from datatype into another datatype by built in function Number() , Boolean(),..
                Ex: let x = 0 
                    console.log(Boolean(x)) // false
-    coercion  :convert from datatype into another datatype by manually 
+    coercion  :convert from datatype into another datatype by automatically
                Ex: let y = "25"
                console.log(x + 5) //255 convert 5 from number into string
                

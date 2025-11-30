@@ -8,13 +8,13 @@ console.log(convert(x))
 
 // Q2
 function falsy(p) {
-    if(p == 0){
+    if(p == 0||p==false||p==null||p==undefined){
     return "Invalid"
 }else{
     return "Valid"
 }
 }
-let f =0
+let f = 0
 console.log(falsy(f))
 
 // Q3
