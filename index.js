@@ -1,8 +1,10 @@
 "use strict"
+
 // Q1
 function convert(n) {
     return  Number(n)+7
 }
+
 let x  = "123"
 console.log(convert(x))
 
@@ -14,24 +16,28 @@ function falsy(p) {
     return "Valid"
 }
 }
+
 let f = 0
 console.log(falsy(f))
 
 // Q3
+
+function odd(){
 for (let i = 1 ; i <= 10 ; i++){
     if(i % 2 == 0){
         continue
     }
     console.log(i)
-}
+}}
+odd( )
 
 // Q4
+function even(num) {
+   return num % 2 == 0
+}
+
 let number = [1,2,3,4,5]
-let even_number= number.filter(
-    (number)=>{
-      return number % 2 == 0
-})
-console.log(even_number)
+console.log(number.filter(even))
 
 // Q5
 let arr3
@@ -44,49 +50,57 @@ let arr2 = [4,5,6]
 console.log(merge(arr1,arr2))
 
 // Q6
-let day = 2
-switch (day) {
-    case 1:
-        console.log("Sunday")
-        break;
+function sw(day){
+    switch (day) {
+        case 1:
+            console.log("Sunday")
+            break;
 
-    case 2:
-         console.log("Monday")
-        break;
+        case 2:
+            console.log("Monday")
+            break;
 
-    case 3:
-         console.log("Tuesday")
-        break;
+        case 3:
+            console.log("Tuesday")
+            break;
 
-    case 4:
-         console.log("Wednesday")
-        break;
+        case 4:
+            console.log("Wednesday")
+            break;
 
-    case 5:
-         console.log("Thursday")
-        break;
+        case 5:
+            console.log("Thursday")
+            break;
 
-    case 6:
-         console.log("Friday")
-        break;
-    
-    case 7:
-         console.log("Saturday")
-        break;
+        case 6:
+            console.log("Friday")
+            break;
+        
+        case 7:
+            console.log("Saturday")
+            break;
 
-    default:
-        console.log("Not found")
-        break;
+        default:
+            console.log("Not found")
+            break;
+    }
+
 }
+let day = 2
+sw(day)
 
 // Q7
-let ss=['a','ab','abc']
 let re=[]
-ss.map(
-        (ele)=>{
+function count(arr){  
+    arr.map(
+      (ele)=>{
       re.push(ele.length)
     })
-console.log(re)
+    return re
+}
+
+let ss=['a','ab','abc']
+console.log(count(ss))
 
 // Q8
 function i(num){
@@ -102,6 +116,7 @@ console.log(i(15))
 let arr = (number)=> {
    return number ** 2
 }
+
 console.log(arr(5))
 
 // another solution
@@ -114,15 +129,17 @@ console.log(arr(5))
 function m(obj){
     return obj['name']+" is "+obj['age']+" years old"
 }
-const person={
+
+let person={
     name:'shahd',
     age: 22
 }
 console.log(m(person))
 
 // Q11
+ let result = 0
+
 function l(...numbers){
-    let result = 0
     for(let i = 0 ; i<numbers.length;i++){
        result += numbers[i]
     }return result
@@ -132,6 +149,7 @@ console.log(l(1,2,3,4,5))
 // Q12
 function sucess(pass){
     return new Promise((resolve, reject) => {
+
         setTimeout(() => {
            if(pass==262003){
             resolve("sucess")
@@ -148,12 +166,15 @@ function sucess(pass){
 // Q13
 function large(number){
     let g = number[0]
+
     for (let i = 0; i < number.length; i++) {
         if(number[i]>g){
             g= number[i]
         } }
+
     return g 
 }
+
 let h = [1,3,7,2,4]
 console.log(large(h))
 
@@ -161,15 +182,18 @@ console.log(large(h))
 function b (o){
     return Object.keys(o)
 }
+
 let o ={
     name :'shahd',
     age: 22
 }
+
 console.log(b(o))
 
 // Q15
 function a (c){
     return c.split(" ")
 }
+
 let c = "The quick brown fox"
 console.log(a(c))
